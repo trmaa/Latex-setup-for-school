@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.4.8)  8 APR 2025 21:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.4.8)  30 APR 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -497,7 +497,7 @@ ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on docs/Fisica/MCU.pdf (4 pages, 77821 bytes).
+Output written on docs/Fisica/MCU.pdf (4 pages, 77641 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
