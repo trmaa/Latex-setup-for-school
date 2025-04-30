@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Introducció}{2}{}%
-\contentsline {section}{\numberline {1.1}Cinemàtica}{2}{}%
-\contentsline {section}{\numberline {1.2}Radians}{2}{}%
-\contentsline {chapter}{\numberline {2}Fórmules}{3}{}%
