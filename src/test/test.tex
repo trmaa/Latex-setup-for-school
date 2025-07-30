@@ -1,12 +1,31 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 
-\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{hyperref, caption}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\usepackage{fancyhdr, lastpage, etoolbox}
+\pagestyle{fancy}
+\rhead{Author}
+\lhead{Test title}
+\cfoot{\thepage\ /\ \pageref{LastPage}}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\usepackage{amsmath, amssymb, amsfonts, amsthm, fancyvrb}
+
+\usepackage{tikz, tcolorbox}
 
 \usepackage{graphicx, float}
 \graphicspath{ {./img/} }
 
-\usepackage[letterpaper, top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.25, width=2.5in}
+
+\usepackage[letterpaper, top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
 \renewcommand{\baselinestretch}{1.25}
 \setlength{\parindent}{32pt}
 \setlength{\parskip}{1.25em}
@@ -19,15 +38,21 @@
 %----------------------------------------------------------------------------------------------------------------------------------
 
 \maketitle
-\newpage
 
+\newpage
 \begin{abstract}
 	SEXO EN EL OXXO EN EXCESO
 
 	lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 \end{abstract}
-\newpage
 
+\newpage
+\tableofcontents
+
+\newpage
+\chapter{Xsonalae Xsonalea}
+
+\newpage
 \section{El sexo del Oxxo}
 	Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 	lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -55,6 +80,16 @@
 			y_f = y_o + v_o\Delta t + \frac{1}{2}a\Delta t^2
 		\end{equation}
 
+		\begin{tcolorbox}[colback=red!5!white, colframe=red!75!black, title=El sexo en el Oxxo-tracing]
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			\begin{equation}
+				r^2 = x^2 + y^2 + z^2
+            \end{equation}
+			\begin{equation}
+				\vec{r} = \vec{o} + \Delta t\vec{d} 
+            \end{equation}
+        \end{tcolorbox}
+
 		\begin{figure}[H]
             \centering
             \includegraphics[width=2.5in]{mosca.png}
@@ -64,6 +99,64 @@
 
 		Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 		Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+\newpage
+\section{Pene de monicaco}
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+	\begin{center}
+	\begin{tikzpicture}
+        \begin{axis}[
+            xmin=0, xmax=7.28318,
+            ymin=-1, ymax=1,
+            xtick={0, 3.14159, 6.28318},
+            ytick={-1, -0.5, 0, 0.5, 1},
+            xticklabels={0, $\pi$, $2\pi$},
+            yticklabels={-1, -$\frac{1}{2}$, 0, $\frac{1}{2}$, 1},
+			axis lines=middle,
+			xlabel=$x$,
+            ylabel=$y$,
+			title=xsonalaexsonalea_sinosoid,
+			grid style=dashed,
+        ]
+			\addplot[samples=100, color=blue, domain=0:6.28318] {sin(deg(x))}
+			node[pos=0.9, right, black] {$\sin(x)$};
+			\addplot[samples=100, color=red, domain=0:6.28318] {cos(deg(x))}
+            node[pos=0.9, right, black] {$\cos(x)$};
+		\end{axis}
+	\end{tikzpicture}
+	\end{center}
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+	\begin{Verbatim}
+		#include <stdio.h>
+
+		int main() {
+			printf(":)");
+		}
+	\end{Verbatim}
 
 %----------------------------------------------------------------------------------------------------------------------------------
 \end{document}

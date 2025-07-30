@@ -8,12 +8,15 @@ build_file() {
     echo -e "\033[38;2;150;200;0mCreating $file_name.pdf\033[0m"	
 
     mkdir -p "$output_dir"
+    rm -rf "$output_dir/*"
     
 	(
 		cd "$(dirname "$file_path")" || exit 1
-		pdflatex -interaction=nonstopmode -output-directory="../$output_dir" "$(basename "$file_path")"
-		cd ../"$output_dir"
-		rm -f -- *.aux *.log *.out *.toc *.nav *.snm *.vrb
+		pdflatex -interaction=nonstopmode -output-directory="../../$output_dir" "$(basename "$file_path")"
+	)
+	(
+		cd "$output_dir"
+		#rm -f -- *.aux *.log *.out *.toc *.nav *.snm *.vrb
 	)
 }
 
